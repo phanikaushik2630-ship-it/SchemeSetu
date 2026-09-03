@@ -1,6 +1,10 @@
 # 🏛️ SchemeSetu (स्कीमसेतु / పథకసేతు)
 ### Autonomous AI-Powered Civic Welfare Bridge for Indian Citizens
 
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Visit%20SchemeSetu-2563eb?style=for-the-badge&logo=google-chrome&logoColor=white)](https://phanikaushik2630-ship-it.github.io/SchemeSetu/)
+[![GitHub Repo](https://img.shields.io/badge/GitHub-SchemeSetu-10b981?style=for-the-badge&logo=github&logoColor=white)](https://github.com/phanikaushik2630-ship-it/SchemeSetu)
+
+> 🌐 **Live Demo Website**: **[https://phanikaushik2630-ship-it.github.io/SchemeSetu/](https://phanikaushik2630-ship-it.github.io/SchemeSetu/)**  
 > **Find, track, and draft applications for Indian Central & State Government Schemes in under 2 minutes.**  
 > Built with React + Vite, Node.js/Express, Google AI Studio (`gemini-3.1-flash-lite`), and `jsPDF`.
 
