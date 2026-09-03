@@ -1,0 +1,938 @@
+[
+  {
+    "id": "pm-kisan",
+    "name": "PM-KISAN (Pradhan Mantri Kisan Samman Nidhi)",
+    "type": "Central",
+    "description": "Direct income support of ₹6,000/year to small and marginal farmers. Amount is released in three equal installments of ₹2,000 every four months.",
+    "benefit": "₹6,000 per year (₹2,000 × 3 installments)",
+    "benefitType": "cash",
+    "officialLink": "https://pmkisan.gov.in/",
+    "eligibility": {
+      "occupation": [
+        "farmer"
+      ],
+      "incomeCeiling": null,
+      "ageMin": 18,
+      "ageMax": null,
+      "category": null,
+      "state": null,
+      "gender": null,
+      "educationMax": null,
+      "disabilityRequired": false,
+      "maritalStatus": null
+    },
+    "requiredDocuments": [
+      "Aadhaar Card",
+      "Land ownership documents (Khatauni/Khasra)",
+      "Bank account passbook",
+      "Mobile number linked to Aadhaar"
+    ],
+    "notes": "Excludes institutional landholders and families with income-tax-paying members.",
+    "deadline": "2026-10-31",
+    "deadlineType": "fixed",
+    "deadlineLabel": "Kharif-Rabi Tranche Cutoff: 31 Oct 2026",
+    "applicationMode": "Online Portal / Common Service Centre (CSC)",
+    "supplementaryFields": [
+      {
+        "id": "landKhataNo",
+        "label": "Land Khatauni / Khasra No.",
+        "placeholder": "e.g. 142/5B",
+        "required": true
+      },
+      {
+        "id": "landAreaAcres",
+        "label": "Cultivable Land Area (in Acres)",
+        "placeholder": "e.g. 2.5",
+        "required": true
+      }
+    ]
+  },
+  {
+    "id": "pmay-g",
+    "name": "PMAY-G (Pradhan Mantri Awas Yojana – Gramin)",
+    "type": "Central",
+    "description": "Financial assistance for construction of pucca houses for rural homeless and those living in kutcha/dilapidated houses. Unit assistance is ₹1.20 lakh in plains and ₹1.30 lakh in hilly/difficult areas.",
+    "benefit": "₹1.20 – ₹1.30 lakh for house construction",
+    "benefitType": "grant",
+    "officialLink": "https://pmayg.nic.in/",
+    "eligibility": {
+      "occupation": null,
+      "incomeCeiling": null,
+      "ageMin": 18,
+      "ageMax": null,
+      "category": null,
+      "state": null,
+      "gender": null,
+      "educationMax": null,
+      "disabilityRequired": false,
+      "maritalStatus": null
+    },
+    "requiredDocuments": [
+      "Aadhaar Card",
+      "BPL card / SECC 2011 inclusion proof",
+      "Bank account passbook",
+      "Caste certificate (if applicable)",
+      "Job card (MGNREGS)"
+    ],
+    "notes": "Beneficiaries selected from Socio-Economic Caste Census (SECC) 2011 data and verified by Gram Sabha.",
+    "deadline": "Rolling",
+    "deadlineType": "rolling",
+    "deadlineLabel": "Rolling / Open All Year (Gram Sabha verified)",
+    "applicationMode": "Gram Panchayat / Block Office",
+    "supplementaryFields": [
+      {
+        "id": "seccId",
+        "label": "SECC 2011 Family ID (if known)",
+        "placeholder": "e.g. SECC-281928"
+      },
+      {
+        "id": "currentHouseType",
+        "label": "Current House Type",
+        "placeholder": "Kutcha / Dilapidated / Homeless"
+      }
+    ]
+  },
+  {
+    "id": "pmay-u",
+    "name": "PMAY-U (Pradhan Mantri Awas Yojana – Urban)",
+    "type": "Central",
+    "description": "Housing subsidy for urban poor to buy or construct their first home. Interest subsidy of up to 6.5% for EWS/LIG and 4% for MIG-I under Credit Linked Subsidy Scheme (CLSS).",
+    "benefit": "Interest subsidy up to 6.5% on home loan (EWS/LIG)",
+    "benefitType": "subsidy",
+    "officialLink": "https://pmaymis.gov.in/",
+    "eligibility": {
+      "occupation": null,
+      "incomeCeiling": 600000,
+      "ageMin": 18,
+      "ageMax": null,
+      "category": [
+        "General",
+        "EWS",
+        "OBC",
+        "SC",
+        "ST"
+      ],
+      "state": null,
+      "gender": null,
+      "educationMax": null,
+      "disabilityRequired": false,
+      "maritalStatus": null
+    },
+    "requiredDocuments": [
+      "Aadhaar Card",
+      "Income certificate",
+      "Property documents",
+      "Bank statement (6 months)",
+      "Caste certificate (if applicable)"
+    ],
+    "notes": "At least one female member must be co-owner for EWS/LIG beneficiaries. Family must not own a pucca house anywhere in India.",
+    "deadline": "2026-11-30",
+    "deadlineType": "fixed",
+    "deadlineLabel": "Urban Beneficiary Registry Cutoff: 30 Nov 2026",
+    "applicationMode": "Online via PMAY-MIS Portal / Municipal Office",
+    "supplementaryFields": [
+      {
+        "id": "municipalityWard",
+        "label": "Municipality / Ward Number",
+        "placeholder": "e.g. Ward 14, Guntur"
+      },
+      {
+        "id": "preferredComponent",
+        "label": "Preferred Component",
+        "placeholder": "Credit Linked Subsidy / BLC"
+      }
+    ]
+  },
+  {
+    "id": "ayushman-bharat",
+    "name": "Ayushman Bharat PM-JAY",
+    "type": "Central",
+    "description": "World's largest health insurance scheme providing health coverage of ₹5 lakh per family per year for secondary and tertiary hospitalization. Covers pre and post hospitalization expenses.",
+    "benefit": "₹5 lakh health cover per family per year",
+    "benefitType": "insurance",
+    "officialLink": "https://pmjay.gov.in/",
+    "eligibility": {
+      "occupation": null,
+      "incomeCeiling": null,
+      "ageMin": null,
+      "ageMax": null,
+      "category": null,
+      "state": null,
+      "gender": null,
+      "educationMax": null,
+      "disabilityRequired": false,
+      "maritalStatus": null
+    },
+    "requiredDocuments": [
+      "Aadhaar Card",
+      "Ration card",
+      "SECC/BPL proof",
+      "Mobile number"
+    ],
+    "notes": "Eligibility is based on SECC 2011 database. Check eligibility at pmjay.gov.in with your name/Aadhaar/mobile number.",
+    "deadline": "Rolling",
+    "deadlineType": "rolling",
+    "deadlineLabel": "Rolling / Always Open (Instant e-KYC)",
+    "applicationMode": "Empanelled Hospital / CSC / PM-JAY Kiosk",
+    "supplementaryFields": [
+      {
+        "id": "rationCardNo",
+        "label": "Ration Card Number",
+        "placeholder": "e.g. WAP081928192"
+      }
+    ]
+  },
+  {
+    "id": "nsp-pre-matric",
+    "name": "NSP Pre-Matric Scholarship (SC Students)",
+    "type": "Central",
+    "description": "Scholarship for SC students studying in Class 9 and 10. Provides financial support to enable them to continue studies and prevent dropout at the secondary level.",
+    "benefit": "₹150–₹350/month (day scholar) + ₹750–₹1,000/month (hostel)",
+    "benefitType": "scholarship",
+    "officialLink": "https://scholarships.gov.in/",
+    "eligibility": {
+      "occupation": [
+        "student"
+      ],
+      "incomeCeiling": 250000,
+      "ageMin": 13,
+      "ageMax": 20,
+      "category": [
+        "SC"
+      ],
+      "state": null,
+      "gender": null,
+      "educationMax": "10th-12th",
+      "disabilityRequired": false,
+      "maritalStatus": null
+    },
+    "requiredDocuments": [
+      "Aadhaar Card",
+      "Caste certificate (SC)",
+      "Income certificate (parent/guardian)",
+      "Previous year mark sheet",
+      "Bank account (student's own or joint with parent)",
+      "Bonafide certificate from school"
+    ],
+    "notes": "Apply on National Scholarship Portal (scholarships.gov.in). Annual fresh application required.",
+    "deadline": "2026-09-25",
+    "deadlineType": "academic",
+    "deadlineLabel": "School Portal Verification: 25 Sep 2026 (CLOSING SOON)",
+    "applicationMode": "National Scholarship Portal (NSP)",
+    "supplementaryFields": [
+      {
+        "id": "schoolUdiseCode",
+        "label": "School U-DISE Code",
+        "placeholder": "e.g. 28010201801",
+        "required": true
+      },
+      {
+        "id": "studentClass",
+        "label": "Current Class (1st to 10th)",
+        "placeholder": "e.g. Class 9",
+        "required": true
+      },
+      {
+        "id": "previousYearPercentage",
+        "label": "Previous Year Marks (%)",
+        "placeholder": "e.g. 78%",
+        "required": true
+      }
+    ]
+  },
+  {
+    "id": "nsp-post-matric",
+    "name": "NSP Post-Matric Scholarship (SC/ST/OBC)",
+    "type": "Central",
+    "description": "Scholarship for SC, ST, and OBC students studying at post-matriculation or post-secondary stage to allow them to complete education. Covers maintenance allowance and other charges.",
+    "benefit": "₹3,000–₹12,000/year (varies by course and category)",
+    "benefitType": "scholarship",
+    "officialLink": "https://scholarships.gov.in/",
+    "eligibility": {
+      "occupation": [
+        "student"
+      ],
+      "incomeCeiling": 300000,
+      "ageMin": 15,
+      "ageMax": 35,
+      "category": [
+        "SC",
+        "ST",
+        "OBC"
+      ],
+      "state": null,
+      "gender": null,
+      "educationMax": null,
+      "disabilityRequired": false,
+      "maritalStatus": null
+    },
+    "requiredDocuments": [
+      "Aadhaar Card",
+      "Caste certificate",
+      "Income certificate",
+      "Previous year mark sheet / degree",
+      "Bonafide certificate from institution",
+      "Bank passbook"
+    ],
+    "notes": "Applicable for courses after Class 10 including ITI, diploma, graduation, and post-graduation.",
+    "deadline": "2026-09-30",
+    "deadlineType": "academic",
+    "deadlineLabel": "Student Application Deadline: 30 Sep 2026 (CLOSING SOON)",
+    "applicationMode": "National Scholarship Portal (NSP)",
+    "supplementaryFields": [
+      {
+        "id": "collegeInstituteName",
+        "label": "College / University Name",
+        "placeholder": "e.g. Andhra University",
+        "required": true
+      },
+      {
+        "id": "courseEnrolled",
+        "label": "Course Enrolled (e.g. B.Tech, B.Sc)",
+        "placeholder": "e.g. B.Tech Computer Science",
+        "required": true
+      },
+      {
+        "id": "rollRegNo",
+        "label": "Roll / Registration Number",
+        "placeholder": "e.g. 24AUCS019",
+        "required": true
+      }
+    ]
+  },
+  {
+    "id": "standup-india",
+    "name": "Stand-Up India",
+    "type": "Central",
+    "description": "Facilitates bank loans between ₹10 lakh and ₹1 crore for SC/ST and women entrepreneurs to set up greenfield enterprises in manufacturing, services, agri-allied, or trading sector.",
+    "benefit": "Loan ₹10 lakh – ₹1 crore at concessional rates",
+    "benefitType": "loan",
+    "officialLink": "https://www.standupmitra.in/",
+    "eligibility": {
+      "occupation": [
+        "small business owner",
+        "unemployed"
+      ],
+      "incomeCeiling": null,
+      "ageMin": 18,
+      "ageMax": null,
+      "category": [
+        "SC",
+        "ST"
+      ],
+      "state": null,
+      "gender": null,
+      "educationMax": null,
+      "disabilityRequired": false,
+      "maritalStatus": null
+    },
+    "eligibilityAlternate": {
+      "gender": "female",
+      "category": null
+    },
+    "requiredDocuments": [
+      "Aadhaar Card",
+      "PAN Card",
+      "Caste certificate (for SC/ST)",
+      "Business plan / project report",
+      "Bank statements (6 months)",
+      "Proof of enterprise registration"
+    ],
+    "notes": "Either SC/ST OR woman entrepreneur qualifies. Enterprise must be a greenfield (new) project.",
+    "deadline": "Rolling",
+    "deadlineType": "rolling",
+    "deadlineLabel": "Rolling / Continuous Bank Processing",
+    "applicationMode": "Stand-Up Mitra Portal / Any Scheduled Bank",
+    "supplementaryFields": [
+      {
+        "id": "enterpriseType",
+        "label": "Proposed Enterprise (Manufacturing/Services/Trading)",
+        "placeholder": "e.g. Food Processing Unit"
+      },
+      {
+        "id": "proposedLoanAmount",
+        "label": "Required Loan Amount (₹10L to ₹1Cr)",
+        "placeholder": "e.g. ₹25,00,000"
+      }
+    ]
+  },
+  {
+    "id": "pm-mudra",
+    "name": "PM MUDRA Yojana (Micro Units Development & Refinance Agency)",
+    "type": "Central",
+    "description": "Provides loans up to ₹20 lakh to non-corporate, non-farm small/micro enterprises. Loans under Shishu (up to ₹50k), Kishore (₹50k–₹5L), and Tarun (₹5L–₹20L) categories.",
+    "benefit": "Collateral-free loan up to ₹20 lakh",
+    "benefitType": "loan",
+    "officialLink": "https://www.mudra.org.in/",
+    "eligibility": {
+      "occupation": [
+        "small business owner",
+        "daily wage worker",
+        "farmer"
+      ],
+      "incomeCeiling": null,
+      "ageMin": 18,
+      "ageMax": 65,
+      "category": null,
+      "state": null,
+      "gender": null,
+      "educationMax": null,
+      "disabilityRequired": false,
+      "maritalStatus": null
+    },
+    "requiredDocuments": [
+      "Aadhaar Card",
+      "PAN Card",
+      "Proof of business address",
+      "Bank statements (6 months)",
+      "Photographs",
+      "Business registration proof (if any)"
+    ],
+    "notes": "No collateral required. Apply through any scheduled commercial bank, MFI, or NBFC.",
+    "deadline": "Rolling",
+    "deadlineType": "rolling",
+    "deadlineLabel": "Rolling / Active Banking Cycle",
+    "applicationMode": "Public/Private Sector Banks / NBFCs / Udyamimitra",
+    "supplementaryFields": [
+      {
+        "id": "mudraCategory",
+        "label": "MUDRA Loan Category",
+        "placeholder": "Shishu (up to ₹50k) / Kishore (to ₹5L) / Tarun (to ₹10L)"
+      },
+      {
+        "id": "businessActivity",
+        "label": "Business Activity / Purpose",
+        "placeholder": "e.g. Retail Store Expansion"
+      }
+    ]
+  },
+  {
+    "id": "pmjjby",
+    "name": "Pradhan Mantri Jeevan Jyoti Bima Yojana (PMJJBY)",
+    "type": "Central",
+    "description": "Life insurance scheme offering coverage of ₹2 lakh for death due to any cause. Annual premium is only ₹436, auto-debited from bank account. Renewable every year.",
+    "benefit": "₹2 lakh life cover at ₹436/year premium",
+    "benefitType": "insurance",
+    "officialLink": "https://jansuraksha.gov.in/",
+    "eligibility": {
+      "occupation": null,
+      "incomeCeiling": null,
+      "ageMin": 18,
+      "ageMax": 50,
+      "category": null,
+      "state": null,
+      "gender": null,
+      "educationMax": null,
+      "disabilityRequired": false,
+      "maritalStatus": null
+    },
+    "requiredDocuments": [
+      "Aadhaar Card",
+      "Bank account (savings)",
+      "Auto-debit consent form"
+    ],
+    "notes": "Must have a savings bank account. Enroll through your bank. Coverage lapses if premium not paid.",
+    "deadline": "2027-05-31",
+    "deadlineType": "annual",
+    "deadlineLabel": "Annual Renewal: 31 May 2027 (Auto-Debit)",
+    "applicationMode": "Savings Bank Account Auto-Debit",
+    "supplementaryFields": [
+      {
+        "id": "nomineeName",
+        "label": "Nominee Full Name",
+        "placeholder": "e.g. Lakshmi Devi"
+      },
+      {
+        "id": "nomineeRelation",
+        "label": "Relationship with Nominee",
+        "placeholder": "Spouse / Son / Daughter"
+      }
+    ]
+  },
+  {
+    "id": "svamitva",
+    "name": "PM Svamitva Yojana",
+    "type": "Central",
+    "description": "Provides property rights to residents of rural villages by mapping land parcels using drone surveys and issuing 'property cards'. Helps in getting loans against property.",
+    "benefit": "Legal property card / title deed for rural house",
+    "benefitType": "property_rights",
+    "officialLink": "https://svamitva.nic.in/",
+    "eligibility": {
+      "occupation": null,
+      "incomeCeiling": null,
+      "ageMin": 18,
+      "ageMax": null,
+      "category": null,
+      "state": null,
+      "gender": null,
+      "educationMax": null,
+      "disabilityRequired": false,
+      "maritalStatus": null
+    },
+    "requiredDocuments": [
+      "Aadhaar Card",
+      "Proof of rural residence",
+      "Village survey record"
+    ],
+    "notes": "Applicable only for residential land in rural areas. Scheme is being rolled out panchayat by panchayat.",
+    "deadline": "Rolling",
+    "deadlineType": "rolling",
+    "deadlineLabel": "Rolling / Village Drone Survey Cycle",
+    "applicationMode": "Revenue Department / Gram Panchayat",
+    "supplementaryFields": [
+      {
+        "id": "villageName",
+        "label": "Abadi Area / Village Name",
+        "placeholder": "e.g. Chinnaganjam Village"
+      }
+    ]
+  },
+  {
+    "id": "kisan-credit-card",
+    "name": "Kisan Credit Card (KCC)",
+    "type": "Central",
+    "description": "Provides timely and adequate credit to farmers for their agricultural operations, maintenance expenses, and allied activities. Credit limit based on landholding and crop pattern.",
+    "benefit": "Flexible credit up to ₹3 lakh at 4% interest (with interest subvention)",
+    "benefitType": "loan",
+    "officialLink": "https://www.myscheme.gov.in/schemes/kcc",
+    "eligibility": {
+      "occupation": [
+        "farmer"
+      ],
+      "incomeCeiling": null,
+      "ageMin": 18,
+      "ageMax": 75,
+      "category": null,
+      "state": null,
+      "gender": null,
+      "educationMax": null,
+      "disabilityRequired": false,
+      "maritalStatus": null
+    },
+    "requiredDocuments": [
+      "Aadhaar Card",
+      "PAN Card",
+      "Land records (Khasra/Khatauni)",
+      "Passport size photo",
+      "Bank account"
+    ],
+    "notes": "Also available for fishers, fish farmers, and animal husbandry farmers. Interest subvention applies for loans up to ₹3 lakh repaid on time.",
+    "deadline": "Rolling",
+    "deadlineType": "rolling",
+    "deadlineLabel": "Rolling / Available Anytime at Bank",
+    "applicationMode": "Any Rural/Commercial Bank / PM-KISAN Portal",
+    "supplementaryFields": [
+      {
+        "id": "cropType",
+        "label": "Major Crops Grown",
+        "placeholder": "Paddy / Cotton / Groundnut"
+      },
+      {
+        "id": "holdingType",
+        "label": "Land Ownership Status",
+        "placeholder": "Owner / Tenant / Sharecropper"
+      }
+    ]
+  },
+  {
+    "id": "pm-vishwakarma",
+    "name": "PM Vishwakarma Yojana",
+    "type": "Central",
+    "description": "Support scheme for traditional artisans and craftspeople (18 trades including carpenter, blacksmith, potter, weaver). Provides skill upgradation, toolkit support, and collateral-free loans.",
+    "benefit": "₹15,000 toolkit grant + loan up to ₹3 lakh at 5% interest",
+    "benefitType": "grant_and_loan",
+    "officialLink": "https://pmvishwakarma.gov.in/",
+    "eligibility": {
+      "occupation": [
+        "daily wage worker",
+        "small business owner"
+      ],
+      "incomeCeiling": null,
+      "ageMin": 18,
+      "ageMax": null,
+      "category": null,
+      "state": null,
+      "gender": null,
+      "educationMax": null,
+      "disabilityRequired": false,
+      "maritalStatus": null
+    },
+    "requiredDocuments": [
+      "Aadhaar Card",
+      "Mobile number linked to Aadhaar",
+      "Bank account",
+      "Proof of traditional trade (self-declaration)"
+    ],
+    "notes": "Covers 18 traditional trades: carpenter, boat maker, armorer, blacksmith, hammer & tool kit maker, locksmith, goldsmith, potter, sculptor, cobbler, mason, basket/mat weaver, doll/toy maker, barber, garland maker, washerman, tailor, fishing net maker.",
+    "deadline": "2026-12-31",
+    "deadlineType": "fixed",
+    "deadlineLabel": "Phase 1 Registry Window: 31 Dec 2026",
+    "applicationMode": "CSC Portal with Biometric e-KYC",
+    "supplementaryFields": [
+      {
+        "id": "traditionalTrade",
+        "label": "Traditional Artisan Trade (18 listed)",
+        "placeholder": "Carpenter / Blacksmith / Potter / Mason"
+      }
+    ]
+  },
+  {
+    "id": "sukanya-samriddhi",
+    "name": "Sukanya Samriddhi Yojana (SSY)",
+    "type": "Central",
+    "description": "Small savings scheme for the girl child, opened by parents/guardians for girls below age 10. Offers one of the highest interest rates among small savings schemes (currently 8.2% p.a.).",
+    "benefit": "High-interest savings account (8.2% p.a.) with tax benefits",
+    "benefitType": "savings",
+    "officialLink": "https://www.myscheme.gov.in/schemes/ssy",
+    "eligibility": {
+      "occupation": null,
+      "incomeCeiling": null,
+      "ageMin": 0,
+      "ageMax": 10,
+      "category": null,
+      "state": null,
+      "gender": "female",
+      "educationMax": null,
+      "disabilityRequired": false,
+      "maritalStatus": null
+    },
+    "requiredDocuments": [
+      "Birth certificate of girl child",
+      "Aadhaar Card (parent/guardian)",
+      "Address proof (parent/guardian)",
+      "PAN Card (parent/guardian)"
+    ],
+    "notes": "Account can be opened at any post office or authorized bank. Minimum deposit ₹250/year, maximum ₹1.5 lakh/year. Matures after 21 years from date of opening.",
+    "deadline": "Rolling",
+    "deadlineType": "rolling",
+    "deadlineLabel": "Rolling (Before Girl Child turns 10)",
+    "applicationMode": "Post Office or Authorized Bank Branch",
+    "supplementaryFields": [
+      {
+        "id": "girlChildName",
+        "label": "Girl Child Full Name",
+        "placeholder": "e.g. Ananya Rao"
+      },
+      {
+        "id": "girlChildDob",
+        "label": "Girl Child Date of Birth",
+        "placeholder": "DD/MM/YYYY"
+      }
+    ]
+  },
+  {
+    "id": "atal-pension",
+    "name": "Atal Pension Yojana (APY)",
+    "type": "Central",
+    "description": "Pension scheme focused on workers in the unorganised sector. Guarantees a minimum monthly pension of ₹1,000–₹5,000 after age 60, based on monthly contribution amount.",
+    "benefit": "Guaranteed pension ₹1,000–₹5,000/month after age 60",
+    "benefitType": "pension",
+    "officialLink": "https://jansuraksha.gov.in/",
+    "eligibility": {
+      "occupation": [
+        "farmer",
+        "daily wage worker",
+        "small business owner",
+        "unemployed"
+      ],
+      "incomeCeiling": null,
+      "ageMin": 18,
+      "ageMax": 40,
+      "category": null,
+      "state": null,
+      "gender": null,
+      "educationMax": null,
+      "disabilityRequired": false,
+      "maritalStatus": null
+    },
+    "requiredDocuments": [
+      "Aadhaar Card",
+      "Savings bank account",
+      "Mobile number"
+    ],
+    "notes": "Not eligible for income tax payers (as of 2022). Contributions auto-debited from bank. Central government co-contributes for eligible subscribers.",
+    "deadline": "Rolling",
+    "deadlineType": "rolling",
+    "deadlineLabel": "Rolling (Eligible Age: 18–40 Years)",
+    "applicationMode": "Savings Bank Branch / Net Banking",
+    "supplementaryFields": [
+      {
+        "id": "targetPension",
+        "label": "Desired Monthly Pension at 60",
+        "placeholder": "₹1,000 / ₹2,000 / ₹3,000 / ₹4,000 / ₹5,000"
+      }
+    ]
+  },
+  {
+    "id": "naps",
+    "name": "National Apprenticeship Promotion Scheme (NAPS)",
+    "type": "Central",
+    "description": "Promotes apprenticeship training by sharing 25% of the prescribed stipend with employers who engage apprentices. Helps youth gain on-the-job skills and industry experience.",
+    "benefit": "Stipend support during apprenticeship (₹1,500–₹10,000/month based on qualification)",
+    "benefitType": "stipend",
+    "officialLink": "https://www.apprenticeshipindia.gov.in/",
+    "eligibility": {
+      "occupation": [
+        "student",
+        "unemployed"
+      ],
+      "incomeCeiling": null,
+      "ageMin": 14,
+      "ageMax": null,
+      "category": null,
+      "state": null,
+      "gender": null,
+      "educationMax": null,
+      "disabilityRequired": false,
+      "maritalStatus": null
+    },
+    "requiredDocuments": [
+      "Aadhaar Card",
+      "Educational qualification certificates",
+      "Bank account",
+      "Passport size photo"
+    ],
+    "notes": "Apprentices must be engaged through registered establishments. Register on apprenticeshipindia.org.",
+    "deadline": "Rolling",
+    "deadlineType": "rolling",
+    "deadlineLabel": "Continuous Apprenticeship Portal Window",
+    "applicationMode": "Apprenticeship India Portal (apprenticeshipindia.gov.in)",
+    "supplementaryFields": [
+      {
+        "id": "tradePreference",
+        "label": "Apprenticeship Sector / Trade",
+        "placeholder": "Mechanical / IT / Healthcare / Logistics"
+      }
+    ]
+  },
+  {
+    "id": "pmkvy",
+    "name": "Pradhan Mantri Kaushal Vikas Yojana (PMKVY / Skill India)",
+    "type": "Central",
+    "description": "Flagship skill development scheme providing free short-term skill training to youth in recognized sectors. Offers reward/placement assistance after successful certification.",
+    "benefit": "Free skill training + certification + ₹500–₹1,500 reward on certification",
+    "benefitType": "training_and_cash",
+    "officialLink": "https://www.skillindiadigital.gov.in/",
+    "eligibility": {
+      "occupation": [
+        "student",
+        "unemployed",
+        "daily wage worker"
+      ],
+      "incomeCeiling": null,
+      "ageMin": 15,
+      "ageMax": 45,
+      "category": null,
+      "state": null,
+      "gender": null,
+      "educationMax": null,
+      "disabilityRequired": false,
+      "maritalStatus": null
+    },
+    "requiredDocuments": [
+      "Aadhaar Card",
+      "Educational qualification proof",
+      "Bank account",
+      "Passport size photo"
+    ],
+    "notes": "Training is free of cost. Trainees also get accident insurance during training period. Find nearest PMKVY center on the official portal.",
+    "deadline": "2026-12-15",
+    "deadlineType": "fixed",
+    "deadlineLabel": "Skill Training Batch Enrolment: 15 Dec 2026",
+    "applicationMode": "Pradhan Mantri Kaushal Kendra (PMKK)",
+    "supplementaryFields": [
+      {
+        "id": "preferredCourse",
+        "label": "Preferred Skill Course",
+        "placeholder": "Solar Technician / CNC Operator / Data Entry"
+      }
+    ]
+  },
+  {
+    "id": "ysr-rythu-bharosa",
+    "name": "YSR Rythu Bharosa – PM KISAN (Andhra Pradesh)",
+    "type": "State",
+    "state": "Andhra Pradesh",
+    "description": "Andhra Pradesh's enhanced farmer income support scheme that tops up PM-KISAN with additional state assistance. Provides ₹13,500 per year to farmers and farm laborers — higher than any other state.",
+    "benefit": "₹13,500/year (₹7,500 state + ₹6,000 PM-KISAN)",
+    "benefitType": "cash",
+    "officialLink": "https://ysrrythubharosa.ap.gov.in/",
+    "eligibility": {
+      "occupation": [
+        "farmer"
+      ],
+      "incomeCeiling": null,
+      "ageMin": 18,
+      "ageMax": null,
+      "category": null,
+      "state": [
+        "Andhra Pradesh"
+      ],
+      "gender": null,
+      "educationMax": null,
+      "disabilityRequired": false,
+      "maritalStatus": null
+    },
+    "requiredDocuments": [
+      "Aadhaar Card",
+      "Andhra Pradesh residence proof",
+      "Land records / tenant farmer proof",
+      "Bank account (preferably AP-based)",
+      "PM-KISAN registration"
+    ],
+    "notes": "Covers tenant farmers and farm laborers in addition to land-owning farmers. Exclusive to Andhra Pradesh residents.",
+    "deadline": "2026-10-15",
+    "deadlineType": "fixed",
+    "deadlineLabel": "Rabi Season Tranche Deadline: 15 Oct 2026 (CLOSING SOON)",
+    "applicationMode": "Rythu Bharosa Kendram (RBK) / Village Ward Secretariat",
+    "supplementaryFields": [
+      {
+        "id": "rbkCenterName",
+        "label": "Nearest Rythu Bharosa Kendram (RBK)",
+        "placeholder": "e.g. RBK Tenali"
+      },
+      {
+        "id": "cultivatorCategory",
+        "label": "Farmer Category",
+        "placeholder": "Landowner / RoFR / Tenant Farmer"
+      }
+    ]
+  },
+  {
+    "id": "ysr-aarogyasri",
+    "name": "Dr. YSR Aarogyasri Health Care Trust (Andhra Pradesh)",
+    "type": "State",
+    "state": "Andhra Pradesh",
+    "description": "Comprehensive health insurance scheme for BPL families in Andhra Pradesh. Provides cashless treatment up to ₹25 lakh per family per year at empaneled hospitals for 2,500+ procedures.",
+    "benefit": "Cashless health coverage up to ₹25 lakh/year",
+    "benefitType": "insurance",
+    "officialLink": "https://aarogyasri.ap.gov.in/",
+    "eligibility": {
+      "occupation": null,
+      "incomeCeiling": 500000,
+      "ageMin": null,
+      "ageMax": null,
+      "category": null,
+      "state": [
+        "Andhra Pradesh"
+      ],
+      "gender": null,
+      "educationMax": null,
+      "disabilityRequired": false,
+      "maritalStatus": null
+    },
+    "requiredDocuments": [
+      "White ration card (BPL)",
+      "Aadhaar Card",
+      "AP residence proof",
+      "Family photo"
+    ],
+    "notes": "Coverage starts from ₹2,500 per illness and goes up to ₹25 lakh. Covers pre-existing conditions too after empanelment.",
+    "deadline": "Rolling",
+    "deadlineType": "rolling",
+    "deadlineLabel": "Rolling / Active Coverage via Health Card",
+    "applicationMode": "Village Secretariat / Aarogyasri Trust Portal",
+    "supplementaryFields": [
+      {
+        "id": "aarogyasriCardNo",
+        "label": "Aarogyasri Card No. (if previously issued)",
+        "placeholder": "e.g. WAP129012"
+      }
+    ]
+  },
+  {
+    "id": "rythu-bandhu",
+    "name": "Telangana Rythu Bandhu (Farm Investment Support)",
+    "type": "State",
+    "state": "Telangana",
+    "description": "Investment support scheme for farmers in Telangana providing ₹10,000 per acre per season (₹20,000/acre/year) to meet agriculture input costs before each cropping season.",
+    "benefit": "₹10,000 per acre per season (₹20,000/acre/year)",
+    "benefitType": "cash",
+    "officialLink": "https://rythubandhu.telangana.gov.in/",
+    "eligibility": {
+      "occupation": [
+        "farmer"
+      ],
+      "incomeCeiling": null,
+      "ageMin": 18,
+      "ageMax": null,
+      "category": null,
+      "state": [
+        "Telangana"
+      ],
+      "gender": null,
+      "educationMax": null,
+      "disabilityRequired": false,
+      "maritalStatus": null
+    },
+    "requiredDocuments": [
+      "Aadhaar Card",
+      "Telangana land passbook (Pattadar Passbook)",
+      "Bank account",
+      "Mobile number"
+    ],
+    "notes": "Benefit is per acre of owned land. Tenant farmers are not directly covered. Disbursed twice a year before Kharif and Rabi seasons.",
+    "deadline": "2026-11-15",
+    "deadlineType": "fixed",
+    "deadlineLabel": "Yadadri / Yasangi Season List: 15 Nov 2026",
+    "applicationMode": "Agriculture Extension Officer (AEO) / Rythu Bandhu Portal",
+    "supplementaryFields": [
+      {
+        "id": "pattadarPassbookNo",
+        "label": "Pattadar Passbook Number",
+        "placeholder": "e.g. T192810291",
+        "required": true
+      }
+    ]
+  },
+  {
+    "id": "kc-kit",
+    "name": "KCR Kit Scheme – Kalyana Lakshmi / Shaadi Mubarak (Telangana)",
+    "type": "State",
+    "state": "Telangana",
+    "description": "Financial assistance for marriage of daughters from SC, ST, BC, minority, and EWS families in Telangana. Provides ₹1,00,116 as one-time marriage support to the bride's family.",
+    "benefit": "₹1,00,116 one-time marriage assistance",
+    "benefitType": "cash",
+    "officialLink": "https://kcrkit.telangana.gov.in/",
+    "eligibility": {
+      "occupation": null,
+      "incomeCeiling": 200000,
+      "ageMin": 18,
+      "ageMax": 35,
+      "category": [
+        "SC",
+        "ST",
+        "OBC",
+        "EWS"
+      ],
+      "state": [
+        "Telangana"
+      ],
+      "gender": "female",
+      "educationMax": null,
+      "disabilityRequired": false,
+      "maritalStatus": "unmarried"
+    },
+    "requiredDocuments": [
+      "Aadhaar Card (bride)",
+      "Caste certificate",
+      "Income certificate",
+      "Age proof (birth certificate / school TC)",
+      "Marriage invitation / registration proof",
+      "Bank account (bride)",
+      "Telangana residence proof"
+    ],
+    "notes": "Kalyana Lakshmi for Hindu SC/ST/BC and Shaadi Mubarak for Muslim minority. Apply through MeeSeva centers or online portal before the marriage date.",
+    "deadline": "Rolling",
+    "deadlineType": "rolling",
+    "deadlineLabel": "Rolling (Within 3 months of institutional delivery)",
+    "applicationMode": "Government Primary Health Centre (PHC)",
+    "supplementaryFields": [
+      {
+        "id": "mctsId",
+        "label": "MCTS / Mother Registration ID",
+        "placeholder": "e.g. MCTS-1092810"
+      }
+    ]
+  }
+]

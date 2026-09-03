@@ -1,0 +1,8 @@
+/* App.css — component-level additions */
+/* Global styles live in index.css. This file handles any app-shell overrides. */
+
+.app-root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
